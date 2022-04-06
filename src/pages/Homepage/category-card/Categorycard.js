@@ -1,7 +1,7 @@
 import React from 'react'
 import './Categorycard.css'
 import axios from "axios";
-import { useState,useEffect } from "react";
+import { useState} from "react";
 
 
 const  Categorycard = () =>  {

@@ -6,6 +6,7 @@ import { makeServer } from "./server";
 import { BrowserRouter } from "react-router-dom";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import { AuthProvider } from "./context/Auth-context";
 
 // Call make Server
 makeServer();
@@ -15,8 +16,10 @@ const root = createRoot(rootElement);
 
 root.render(
   <StrictMode>
-        <BrowserRouter>
+    <BrowserRouter>
+    <AuthProvider>
     <App />
+    </AuthProvider>
     </BrowserRouter>
   </StrictMode>
 );

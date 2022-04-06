@@ -41,7 +41,7 @@ const Navbar = ()  => {
                     
                 </li>
                 <li className="navbar-links icons-align">
-                    <Link to="" className="icon-size"><BsPersonCircle /></Link>
+                    <Link to="/logout" className="icon-size"><BsPersonCircle /></Link>
                 </li>
 
             </ul>
