@@ -32,7 +32,7 @@ const AuthProvider = ({children}) => {
                 payload: { token: encodedToken, foundUser: foundUser },
               });
               localStorage.setItem("JWT_TOKEN", encodedToken);
-              navigate("/products", { replace: true });
+              navigate("/home", { replace: true });
             }
             if (res.status === 201) {
               userDispatch({

@@ -8,11 +8,13 @@ import { LandingPage } from '../pages/LandingPage/LandingPage';
 import { Logout } from '../pages/logout/Logout';
 import { SignIn } from '../pages/SignIn/SignIn';
 import { Signup } from '../pages/Signup/Signup';
+import Mockman from "mockman-js";
 
 function AllRoutes() {
   return (
     <div>
         <Routes>
+        <Route path="/mockman" element={ <Mockman />}></Route> 
           <Route path="/logout" element={<Logout />} /> 
           <Route path="/" element={<LandingPage />} />
           <Route path="/signup" element={<Signup />} />
