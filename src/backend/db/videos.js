@@ -13,6 +13,7 @@ export const videos = [
     isWatchlater: false,
     isLiked: false,
     isInHistory: false,
+    isInPlaylist: false,
   },
   {
     _id: uuid(),
@@ -22,7 +23,7 @@ export const videos = [
     isWatchlater: false,
     isLiked: false,
     isInHistory: false,
-   
+    isInPlaylist: false,
   },
   {
     _id: uuid(),
@@ -32,7 +33,7 @@ export const videos = [
     isWatchlater: false,
     isLiked: false,
     isInHistory: false,
-   
+    isInPlaylist: false,
   },
   {
     _id: uuid(),
@@ -42,7 +43,7 @@ export const videos = [
     isWatchlater: false,
     isLiked: false,
     isInHistory: false,
-   
+    isInPlaylist: false,
   },
   {
     _id: uuid(),
@@ -52,7 +53,7 @@ export const videos = [
     isWatchlater: false,
     isLiked: false,
     isInHistory: false,
-   
+    isInPlaylist: false,
   },
   {
     _id: uuid(),
@@ -62,7 +63,7 @@ export const videos = [
     isWatchlater: false,
     isLiked: false,
     isInHistory: false,
-   
+    isInPlaylist: false,
   },
   {
     _id: uuid(),
@@ -72,7 +73,7 @@ export const videos = [
     isWatchlater: false,
     isLiked: false,
     isInHistory: false,
-   
+    isInPlaylist: false,
   },
   {
     _id: uuid(),
@@ -82,5 +83,6 @@ export const videos = [
     isWatchlater: false,
     isLiked: false,
     isInHistory: false,
+    isInPlaylist: false,
   },
 ];

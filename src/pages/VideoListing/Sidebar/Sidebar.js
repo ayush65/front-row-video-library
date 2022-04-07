@@ -13,7 +13,7 @@ function Sidebar() {
                     <Link to="/videolisting" className="text-decoration" >Explore</Link>
                 </li>
                 <li className="menu-item"> 
-                    <Link to="/" className="text-decoration" >Playlist</Link>
+                    <Link to="/playlist" className="text-decoration" >Playlist</Link>
                 </li>
                 <li className="menu-item"> 
                     <Link to="/liked" className="text-decoration" >Liked</Link>

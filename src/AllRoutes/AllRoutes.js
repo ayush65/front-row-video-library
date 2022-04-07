@@ -8,11 +8,13 @@ import Mockman from "mockman-js";
 import Watchlater from '../pages/Watchlater/Watchlater';
 import Liked from '../pages/Liked/Liked';
 import History from '../pages/History/History';
+import Playlist from '../pages/Playlist/Playlist';
 
 function AllRoutes() {
   return (
     <div>
         <Routes>
+          <Route path="/playlist" element={<Playlist />} />
           <Route path="/history" element={<History/>} />
           <Route path="/liked" element={<Liked />} />
           <Route path="/watchlater" element={<Watchlater />} />
