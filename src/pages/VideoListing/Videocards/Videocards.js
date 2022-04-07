@@ -3,32 +3,19 @@ import './Videocards.css';
 import axios from "axios";
 import { useState} from "react";
 import { AiFillLike  , AiFillDislike} from "react-icons/ai";
-
+import { useFilter } from "../../../context/filter-context";
 
 
 function Videocard() {
 
-  const[data,setData]=useState([])
-
-  async function getCategories() {
-    try {
-      const response = await axios.get("/api/videos");
-      const res = response.data.videos;
-      setData(res);
-
-    } catch (error) {
-      console.error(error);
-    }
-  }
-   getCategories();
-
+  const { state  , dispatch} = useFilter();
 
   return (
     <div>
 <div className="product-container">
 <div className="card-grid">
     {
-             data.map((item) => {
+             state.default.map((item) => { 
               return <div key={item._id} className="card card-shadow">
                 <div className="card-header card-image">
                   <img src={item.imgUrl} alt=""/>
@@ -44,7 +31,13 @@ function Videocard() {
                 <button className="btn-product-card"><AiFillDislike /></button>
                 </div>
                 
-                <button className="btn-product-card">Watch Later</button>
+                <button className="btn-product-card"
+                 onClick={() =>
+                  dispatch({
+                    type: "ADD_TO_WATCHLIST",
+                    payload: { itemId: item._id },
+                  })
+                }>Watch Later</button>
               </div>
             })
     }
