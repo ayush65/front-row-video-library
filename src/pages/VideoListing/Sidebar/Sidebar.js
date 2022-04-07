@@ -22,7 +22,7 @@ function Sidebar() {
                     <Link to="/watchlater" className="text-decoration" >Watch Later</Link>
                 </li>
                 <li className="menu-item"> 
-                    <Link to="/" className="text-decoration">History</Link>
+                    <Link to="/history" className="text-decoration">History</Link>
                 </li>   
             </section>
            

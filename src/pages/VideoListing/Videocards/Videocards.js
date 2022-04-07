@@ -27,7 +27,12 @@ function Videocard() {
                   {item.creator}
                 </h1> 
                 <div>
-                <button className="btn-product-card">Watch Now</button>
+                <button className="btn-product-card"
+                         onClick={() =>
+                               dispatch({
+                               type: "ADD_TO_HISTORY",
+                               payload: { itemId: item._id },
+                          })}>Watch Now</button>
                 <button className="btn-product-card card-btn-product"
                                  onClick={() =>
                                   dispatch({
