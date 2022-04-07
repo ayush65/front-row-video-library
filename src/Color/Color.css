@@ -1,6 +1,6 @@
 @import url("https://angry-bird-ui.netlify.app/components/All-css-files/main.css");
 :root {
-    --primary-color : #212121 ;
+    --primary-color : #041F1E ;
     --white: white ;
     --tertiary-color : #023E8A;
     --navbar-hover: #AED1E6;
@@ -8,7 +8,7 @@
     --navbar-shad: rgba(0, 0, 0, 0.3);
     --border-color: #777;
     --card-shadow: rgba(0, 0, 0, .2);
-    --background-color : #424242;
+    --background-color : #1E2D2F;
 }
 *{
     margin: 0;

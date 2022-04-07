@@ -3,13 +3,19 @@ import {
     Routes,
     Route
   } from "react-router-dom";
-import { Homepage } from '../pages/Homepage/Homepage';
+import { Homepage, LandingPage , Logout , SignIn ,Signup} from '../pages/index';
+import Mockman from "mockman-js";
 
 function AllRoutes() {
   return (
     <div>
         <Routes>
-            <Route exact path="/" element={<Homepage/>}></Route>
+        <Route path="/mockman" element={ <Mockman />}></Route> 
+          <Route path="/logout" element={<Logout />} /> 
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/signin" element={<SignIn />} />
+            <Route exact path="/home" element={<Homepage/>}></Route>
         </Routes>
     </div>
   )
