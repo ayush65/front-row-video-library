@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import "./Navbar.css"
-import { BsFillHeartFill , BsFillCartFill , BsPersonCircle} from "react-icons/bs";
+import { BsPersonCircle} from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from 'react-router-dom'
 
@@ -33,13 +33,6 @@ const Navbar = ()  => {
 
         <div className="navbar-components">
             <ul className="navbar-list-links-components"> 
-                <li className="navbar-links icons-align">
-                    <Link to="" className="icon-size"><BsFillHeartFill/></Link>
-                </li>
-                <li className="navbar-links icons-align">
-                    <Link to="" className="icon-size"><BsFillCartFill/></Link>
-                    
-                </li>
                 <li className="navbar-links icons-align">
                     <Link to="/logout" className="icon-size"><BsPersonCircle /></Link>
                 </li>

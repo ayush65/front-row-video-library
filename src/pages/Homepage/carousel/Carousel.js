@@ -11,7 +11,7 @@ function Carousel() {
 <div className="Banner-container">
   <h1>Front Row Video</h1>
   <h2>One Stop Destination For Day To Day Entertainment</h2>
-  <Link to="/" className="btn btn-banner">Watch Now</Link>
+  <Link to="/videolisting" className="btn btn-banner">Watch Now</Link>
 
 </div>
     </>
