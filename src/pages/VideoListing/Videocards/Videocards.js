@@ -1,9 +1,9 @@
 import React from 'react'
 import './Videocards.css';
-import axios from "axios";
-import { useState} from "react";
 import { AiFillLike  , AiFillDislike} from "react-icons/ai";
 import { useFilter } from "../../../context/filter-context";
+import { RiPlayListAddLine} from "react-icons/ri";
+
 
 
 function Videocard() {
@@ -27,6 +27,12 @@ function Videocard() {
                   {item.creator}
                 </h1> 
                 <div>
+                  <button  className="btn-product-card btn-playlist"
+                                           onClick={() =>
+                                            dispatch({
+                                            type: "ADD_TO_PLAYLIST",
+                                            payload: { itemId: item._id },
+                                       })}><RiPlayListAddLine/></button>
                 <button className="btn-product-card"
                          onClick={() =>
                                dispatch({
