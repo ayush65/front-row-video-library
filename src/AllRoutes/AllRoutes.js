@@ -7,11 +7,13 @@ import { Homepage, LandingPage , Logout , SignIn ,Signup , Videolisting} from '.
 import Mockman from "mockman-js";
 import Watchlater from '../pages/Watchlater/Watchlater';
 import Liked from '../pages/Liked/Liked';
+import History from '../pages/History/History';
 
 function AllRoutes() {
   return (
     <div>
         <Routes>
+          <Route path="/history" element={<History/>} />
           <Route path="/liked" element={<Liked />} />
           <Route path="/watchlater" element={<Watchlater />} />
           <Route path="/videolisting" element={<Videolisting />} />

@@ -58,6 +58,31 @@ const filterReducer = (filterState, action) => {
                   ),
                 ],
               };
+
+              case "ADD_TO_HISTORY":
+                filterStateCopy = {
+                  ...filterStateCopy,
+                  default: [
+                    ...filterStateCopy.default.map((item) =>
+                      item._id === action.payload.itemId
+                        ? { ...item, isInHistory: true }
+                        : item
+                    ),
+                  ],
+                };
+                break;
+    
+                case "REMOVE_FROM_HISTORY":
+                  filterStateCopy = {
+                    ...filterStateCopy,
+                    default: [
+                      ...filterStateCopy.default.map((item) =>
+                        item._id === action.payload.itemId
+                          ? { ...item, isInHistory: false }
+                          : item
+                      ),
+                    ],
+                  }; 
   
       default:
         break;
