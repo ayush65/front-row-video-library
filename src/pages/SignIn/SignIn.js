@@ -85,10 +85,10 @@ const SignIn = () => {
                       type: "UPDATE_USER_DATA",
                       payload: {
                         email: "adarshbalika@gmail.com",
-                        password: "adarshBalika123",
+                        password: "adarshbalika",
                       },
                     });
-                    loginUser("adarshbalika@gmail.com", "adarshBalika123");
+                    loginUser("adarshbalika@gmail.com", "adarshbalika");
                   }}
                 >
                   Sign In with test credentials

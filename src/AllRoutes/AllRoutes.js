@@ -3,11 +3,7 @@ import {
     Routes,
     Route
   } from "react-router-dom";
-import { Homepage } from '../pages/Homepage/Homepage';
-import { LandingPage } from '../pages/LandingPage/LandingPage';
-import { Logout } from '../pages/logout/Logout';
-import { SignIn } from '../pages/SignIn/SignIn';
-import { Signup } from '../pages/Signup/Signup';
+import { Homepage, LandingPage , Logout , SignIn ,Signup} from '../pages/index';
 import Mockman from "mockman-js";
 
 function AllRoutes() {
