@@ -6,11 +6,13 @@ import {
 import { Homepage, LandingPage , Logout , SignIn ,Signup , Videolisting} from '../pages/index';
 import Mockman from "mockman-js";
 import Watchlater from '../pages/Watchlater/Watchlater';
+import Liked from '../pages/Liked/Liked';
 
 function AllRoutes() {
   return (
     <div>
         <Routes>
+          <Route path="/liked" element={<Liked />} />
           <Route path="/watchlater" element={<Watchlater />} />
           <Route path="/videolisting" element={<Videolisting />} />
         <Route path="/mockman" element={ <Mockman />}></Route> 
