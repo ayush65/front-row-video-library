@@ -3,12 +3,9 @@ import {
     Routes,
     Route
   } from "react-router-dom";
-import { Homepage, LandingPage , Logout , SignIn ,Signup , Videolisting} from '../pages/index';
+import { Homepage, LandingPage , Logout , SignIn ,Signup , Videolisting , Watchlater , Liked , History , Playlist} from '../pages/index';
 import Mockman from "mockman-js";
-import Watchlater from '../pages/Watchlater/Watchlater';
-import Liked from '../pages/Liked/Liked';
-import History from '../pages/History/History';
-import Playlist from '../pages/Playlist/Playlist';
+
 
 function AllRoutes() {
   return (

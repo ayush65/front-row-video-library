@@ -27,8 +27,8 @@ function Playlistcard({item}) {
                             })
                           }>Remove from Playlist</button>
                           </div>
+                    </div>
     </div>
-</div>
   )
 }
 
