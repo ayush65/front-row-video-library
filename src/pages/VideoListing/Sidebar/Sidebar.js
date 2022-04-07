@@ -9,11 +9,14 @@ function Sidebar() {
          <div className="main-menu">
         <ul>
             <section className="primary-components-0">
+            <li className="menu-item"> 
+                    <Link to="/videolisting" className="text-decoration" >Explore</Link>
+                </li>
                 <li className="menu-item"> 
                     <Link to="/" className="text-decoration" >Playlist</Link>
                 </li>
                 <li className="menu-item"> 
-                    <Link to="/" className="text-decoration" >Liked</Link>
+                    <Link to="/liked" className="text-decoration" >Liked</Link>
                 </li>    
                 <li className="menu-item"> 
                     <Link to="/watchlater" className="text-decoration" >Watch Later</Link>

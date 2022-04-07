@@ -33,6 +33,31 @@ const filterReducer = (filterState, action) => {
               ),
             ],
           };
+
+          case "ADD_TO_LIKED":
+            filterStateCopy = {
+              ...filterStateCopy,
+              default: [
+                ...filterStateCopy.default.map((item) =>
+                  item._id === action.payload.itemId
+                    ? { ...item, isLiked: true }
+                    : item
+                ),
+              ],
+            };
+            break;
+
+            case "REMOVE_FROM_LIKED":
+              filterStateCopy = {
+                ...filterStateCopy,
+                default: [
+                  ...filterStateCopy.default.map((item) =>
+                    item._id === action.payload.itemId
+                      ? { ...item, isLiked: false }
+                      : item
+                  ),
+                ],
+              };
   
       default:
         break;

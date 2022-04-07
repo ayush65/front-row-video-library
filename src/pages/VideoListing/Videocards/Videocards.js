@@ -27,8 +27,15 @@ function Videocard() {
                   {item.creator}
                 </h1> 
                 <div>
-                <button className="btn-product-card"><AiFillLike /></button>
-                <button className="btn-product-card"><AiFillDislike /></button>
+                <button className="btn-product-card">Watch Now</button>
+                <button className="btn-product-card card-btn-product"
+                                 onClick={() =>
+                                  dispatch({
+                                    type: "ADD_TO_LIKED",
+                                    payload: { itemId: item._id },
+                                  })
+                                }><AiFillLike /></button>
+                <button className="btn-product-card card-btn-product"><AiFillDislike /></button>
                 </div>
                 
                 <button className="btn-product-card"
