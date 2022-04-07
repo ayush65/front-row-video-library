@@ -1,0 +1,9 @@
+.watchlater-container{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.watchcard-container{
+    position: absolute;
+    left: 20%;
+}

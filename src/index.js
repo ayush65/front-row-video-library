@@ -6,6 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { AuthProvider } from "./context/Auth-context";
+import { FilterProvider } from "./context/filter-context";
 
 // Call make Server
 makeServer();
@@ -17,7 +18,9 @@ root.render(
   <StrictMode>
     <BrowserRouter>
     <AuthProvider>
+     <FilterProvider>
     <App />
+    </FilterProvider> 
     </AuthProvider>
     </BrowserRouter>
   </StrictMode>
